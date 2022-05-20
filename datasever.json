@@ -1,0 +1,656 @@
+0,1,2,3,4,5,6,7,8,9,10,11,12,-- phpMyAdmin SQL Dump,_id
+,,,,,,,,,,,,,-- version 4.9.5,6283d7bb2f7b3d33360807ad
+,,,,,,,,,,,,,-- https://www.phpmyadmin.net/,6283d7bb2f7b3d33360807ae
+,,,,,,,,,,,,,--,6283d7bb2f7b3d33360807af
+,,,,,,,,,,,,,-- Máy chủ: localhost:3306,6283d7bb2f7b3d33360807b0
+-- Thời gian đã tạo: Th10 05, 2021 lúc 09:58 AM,,,,,,,,,,,,,6283d7bb2f7b3d33360807b1
+-- Phiên bản máy phục vụ: 10.5.12-MariaDB,,,,,,,,,,,,,,6283d7bb2f7b3d33360807b2
+-- Phiên bản PHP: 7.3.32,,,,,,,,,,,,,,6283d7bb2f7b3d33360807b3
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360807b4
+"SET SQL_MODE = ""NO_AUTO_VALUE_ON_ZERO"";",,,,,,,,,,,,,,6283d7bb2f7b3d33360807b5
+SET AUTOCOMMIT = 0;,,,,,,,,,,,,,,6283d7bb2f7b3d33360807b6
+START TRANSACTION;,,,,,,,,,,,,,,6283d7bb2f7b3d33360807b7
+"SET time_zone = ""+00:00"";",,,,,,,,,,,,,,6283d7bb2f7b3d33360807b8
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360807b9
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360807ba
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;,,,,,,,,,,,,,,6283d7bb2f7b3d33360807bb
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;,,,,,,,,,,,,,,6283d7bb2f7b3d33360807bc
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;,,,,,,,,,,,,,,6283d7bb2f7b3d33360807bd
+/*!40101 SET NAMES utf8mb4 */;,,,,,,,,,,,,,,6283d7bb2f7b3d33360807be
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360807bf
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360807c0
+-- Cơ sở dữ liệu: `id14951107_music4b`,,,,,,,,,,,,,,6283d7bb2f7b3d33360807c1
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360807c2
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360807c3
+-- --------------------------------------------------------,,,,,,,,,,,,,,6283d7bb2f7b3d33360807c4
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360807c5
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360807c6
+-- Cấu trúc bảng cho bảng `baihat`,,,,,,,,,,,,,,6283d7bb2f7b3d33360807c7
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360807c8
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360807c9
+CREATE TABLE `baihat` (,,,,,,,,,,,,,,6283d7bb2f7b3d33360807ca
+  `IdBaiHat` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807cb
+  `TenBaiHat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807cc
+  `TenCaSi` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807cd
+  `HinhBaiHat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807ce
+  `LinkBaiHat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807cf
+  `IdBangXepHang` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807d0
+  `IdChuDe` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807d1
+  `IdDeXuat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807d2
+  `IdNgheSi` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807d3
+  `IdPhoBien` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807d4
+  `IdPlayList` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807d5
+  `LuotThich` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807d6
+  `IdThinhHanh` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360807d7
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;,,,,,,,,,,,,,,6283d7bb2f7b3d33360807d8
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360807d9
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360807da
+-- Đang đổ dữ liệu cho bảng `baihat`,,,,,,,,,,,,,,6283d7bb2f7b3d33360807db
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360807dc
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360807dd
+INSERT INTO `baihat` (`IdBaiHat`, `TenBaiHat`, `TenCaSi`, `HinhBaiHat`, `LinkBaiHat`, `IdBangXepHang`, `IdChuDe`, `IdDeXuat`, `IdNgheSi`, `IdPhoBien`, `IdPlayList`, `LuotThich`, `IdThinhHanh`) VALUES,,6283d7bb2f7b3d33360807de
+(1," 'Bao Giờ Lấy Chồng'"," 'Bích Phương'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/B%C3%ADch%20Ph%C6%B0%C6%A1ng/Bao%20Gi%E1%BB%9D%20L%E1%BA%A5y%20Ch%E1%BB%93ng.jpg'"," 'https://musicfourbig.000webhostapp.com/Bao%20Gi%E1%BB%9D%20L%C3%A1y%20Ch%E1%BB%93ng.mp3'"," '3'"," '0'"," '0'"," '1'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807df
+(2," 'Bùa Yêu'"," 'Bích Phưuong'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/B%C3%ADch%20Ph%C6%B0%C6%A1ng/B%C3%B9a%20Y%C3%AAu.jpg'"," 'https://musicfourbig.000webhostapp.com/B%C3%B9a%20Y%C3%AAu.mp3'"," '3'"," '0'"," '0'"," '1'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807e0
+(3," 'Đi Đu Đưa Đi'"," 'Bích Phương'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/B%C3%ADch%20Ph%C6%B0%C6%A1ng/%C4%90i%20%C4%90u%20%C4%90%C6%B0a%20%C4%90i.jpg'"," 'https://musicfourbig.000webhostapp.com/%C4%90i%20%C4%90u%20%C4%90%C6%B0a%20%C4%90i.mp3'"," '3'"," '0'"," '0'"," '1'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807e1
+(4," 'Gửi Anh Xa Nhớ'"," 'Bích Phương'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/B%C3%ADch%20Ph%C6%B0%C6%A1ng/G%E1%BB%ADi%20Anh%20Xa%20Nh%E1%BB%9B.jpg'"," 'https://musicfourbig.000webhostapp.com/G%E1%BB%ADi%20Anh%20Xa%20Nh%E1%BB%9B.mp3'"," '3'"," '0'"," '0'"," '1'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807e2
+(5," 'Thích Thì Chơi'"," 'Bích Phương'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/B%C3%ADch%20Ph%C6%B0%C6%A1ng/Th%C3%ADch%20Th%C3%AC%20Ch%C6%A1i.jpg'"," 'https://musicfourbig.000webhostapp.com/Th%C3%ADch%20Th%C3%AC%20Ch%C6%A1i.mp3'"," '3'"," '0'"," '0'"," '1'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807e3
+(6," '021'"," 'BinZ'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/BinZ/021.jpg'"," 'https://musicfourbig.000webhostapp.com/021.mp3'"," '3'"," '0'"," '0'"," '2'"," '0'"," '8'", 1," '0')",,6283d7bb2f7b3d33360807e4
+(7," 'Anh Sao Cũng Được'"," 'BinZ'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/BinZ/Sao%20C%C5%A9ng%20%C4%90u%E1%BB%8Dc.jpg'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/BinZ/Sao%20C%C5%A9ng%20%C4%90u%E1%BB%8Dc.jpg'"," '3'"," '0'"," '0'"," '2'"," '0'"," '8'", 0," '0')",,6283d7bb2f7b3d33360807e5
+(8," 'BigCitYBoi'"," 'BinZ'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/BinZ/bicityboi.jpg'"," 'https://musicfourbig.000webhostapp.com/Bigcityboi.mp3'"," '3'"," '0'"," '0'"," '2'"," '0'"," '8'", 0," '0')",,6283d7bb2f7b3d33360807e6
+(9," 'So Close'"," 'BinZ'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/BinZ/SoClose.jpg'"," 'https://musicfourbig.000webhostapp.com/So%20Close.mp3'"," '3'"," '0'"," '0'"," '2'"," '0'"," '8'", 0," '0')",,6283d7bb2f7b3d33360807e7
+(10," 'They Said'"," 'BinZ'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/BinZ/They%20Said.jpg'"," 'https://musicfourbig.000webhostapp.com/They%20Said.mp3'"," '3'"," '0'"," '0'"," '2'"," '0'"," '8'", 0," '0')",,6283d7bb2f7b3d33360807e8
+(11," 'Gên'"," 'BinZ'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/BinZ/Gene.jpg'"," 'https://musicfourbig.000webhostapp.com/Gene.mp3'"," '3'"," '0'"," '0'"," '2'"," '0'"," '8'", 0," '0')",,6283d7bb2f7b3d33360807e9
+(12," 'Sau Lưng Anh Sẽ Là'"," 'BinZ'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/BinZ/Sau%20L%C6%B0ng%20Anh%20S%E1%BA%BD%20L%C3%A0.jpg'"," 'https://musicfourbig.000webhostapp.com/Sau%20L%C6%B0ng%20Anh%20S%E1%BA%BD%20L%C3%A0.mp3'"," '3'"," '0'"," '0'"," '2'"," '0'"," '8'", 0," '0')",,6283d7bb2f7b3d33360807ea
+(13," 'Anh Đếch Cần Nhiều ngoài em'"," 'Đen Vâu'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90en%20V%C3%A2u/Anh%20%C4%90%E1%BA%BFch%20C%E1%BA%A7n%20G%C3%AC%20Ngo%C3%A0i%20Em.jpg'"," 'https://musicfourbig.000webhostapp.com/Anh%20%C4%90%E1%BA%BFch%20C%E1%BA%A7n%20Nhi%E1%BB%81u%20ngo%C3%A0i%20em.mp3'"," '3'"," '0'"," '0'"," '3'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807eb
+(14," 'Bài Này Chil Phết'"," 'Đen Vâu'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90en%20V%C3%A2u/B%C3%A0i%20N%C3%A0y%20Chil%20Ph%E1%BA%BFt.jpg'"," 'https://musicfourbig.000webhostapp.com/B%C3%A0i%20N%C3%A0y%20Chil%20Ph%E1%BA%BFt.mp3'"," '3'"," '0'"," '0'"," '3'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807ec
+(15," 'Đưa Nhau Đi Chốn'"," 'Đen Vâu'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90en%20V%C3%A2u/%C4%90%C6%B0a%20Nhau%20%C4%90i%20Ch%E1%BB%91n.jpg'"," 'https://musicfourbig.000webhostapp.com/%C4%90%C6%B0a%20Nhau%20%C4%90i%20Ch%E1%BB%91n.mp3'"," '3'"," '0'"," '0'"," '3'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807ed
+(16," 'Hai Triệu Năm'"," 'Đen Vâu'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90en%20V%C3%A2u/Hai%20Tri%E1%BB%87u%20N%C4%83m.jpg'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90en%20V%C3%A2u/Hai%20Tri%E1%BB%87u%20N%C4%83m.jpg'"," '3'"," '0'"," '0'"," '3'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807ee
+(17," 'Lối Nhỏ'"," 'Đen Vâu'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90en%20V%C3%A2u/L%E1%BB%91i%20nh%E1%BB%8F.jpg'"," 'https://musicfourbig.000webhostapp.com/L%E1%BB%91i%20nh%E1%BB%8F.mp3'"," '3'"," '0'"," '0'"," '3'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807ef
+(18," 'Ta Cứ Đi Cùng Nhau'"," 'Đen Vâu'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90en%20V%C3%A2u/Ta%20C%E1%BB%A9%20%C4%90i%20C%C3%B9ng%20Nhau.jpg'"," 'https://musicfourbig.000webhostapp.com/Ta%20C%E1%BB%A9%20%C4%90i%20C%C3%B9ng%20Nhau.mp3'"," '3'"," '0'"," '0'"," '3'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807f0
+(19," 'Vợ Chồng A Phủ'"," 'Đen Vâu'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90en%20V%C3%A2u/V%E1%BB%A3%20Ch%E1%BB%93ng%20A%20Ph%E1%BB%A7.jpg'"," 'https://musicfourbig.000webhostapp.com/V%E1%BB%A3%20Ch%E1%BB%93ng%20A%20Ph%E1%BB%A7.mp3'"," '0'"," '0'"," '0'"," '3'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807f1
+(20," 'Chờ Ngày Mưa Tan'"," 'Noo Phước Thịnh'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/Noo%20Ph%C6%B0%E1%BB%9Bc%20Th%E1%BB%8Bnh/Ch%E1%BB%9D%20Ng%C3%A0y%20M%C6%B0a%20Tan.jpg'"," 'https://musicfourbig.000webhostapp.com/Ch%E1%BB%9D%20Ng%C3%A0y%20M%C6%B0a%20Tan.mp3'"," '3'"," '0'"," '0'"," '6'"," '0'"," '7'", 0," '0')",,6283d7bb2f7b3d33360807f2
+(21," 'I_m Still Loving You'"," 'Noo Phước Thịnh'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/Noo%20Ph%C6%B0%E1%BB%9Bc%20Th%E1%BB%8Bnh/I_m%20Still%20Loving%20You.jpg'"," 'https://musicfourbig.000webhostapp.com/I_m%20Still%20Loving%20You.mp3'"," '3'"," '0'"," '0'"," '6'"," '0'"," '7'", 0," '0')",,6283d7bb2f7b3d33360807f3
+(22," 'Lặng Thầm'"," 'Noo Phước Thịnh'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/Noo%20Ph%C6%B0%E1%BB%9Bc%20Th%E1%BB%8Bnh/L%E1%BA%B7ng%20Th%E1%BA%A7m.jpg'"," 'https://musicfourbig.000webhostapp.com/L%E1%BA%B7ng%20Th%E1%BA%A7m.mp3'"," '3'"," '0'"," '0'"," '6'"," '0'"," '7'", 0," '0')",,6283d7bb2f7b3d33360807f4
+(23," 'Như Phút Ban Đầu'"," 'Noo Phước Thịnh'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/Noo%20Ph%C6%B0%E1%BB%9Bc%20Th%E1%BB%8Bnh/Nh%C6%B0%20Ph%C3%BAt%20Ban%20%C4%90%E1%BA%A7u.jpg'"," 'https://musicfourbig.000webhostapp.com/Nh%C6%B0%20Ph%C3%BAt%20Ban%20%C4%90%E1%BA%A7u.mp3'"," '0'"," '0'"," '0'"," '6'"," '0'"," '7'", 0," '0')",,6283d7bb2f7b3d33360807f5
+(24," 'Phôi Phai'"," 'Noo Phước Thịnh'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/Noo%20Ph%C6%B0%E1%BB%9Bc%20Th%E1%BB%8Bnh/Ph%C3%B4i%20Phai.jpg'"," 'https://musicfourbig.000webhostapp.com/Ph%C3%B4i%20Phai.mp3'"," '0'"," '0'"," '0'"," '6'"," '0'"," '7'", 0," '0')",,6283d7bb2f7b3d33360807f6
+(25," 'Thương Em Là Điều Anh Không Thể Ngờ'"," 'Noo Phước Thịnh'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/Noo%20Ph%C6%B0%E1%BB%9Bc%20Th%E1%BB%8Bnh/Th%C6%B0%C6%A1ng%20Em%20L%C3%A0%20%C4%90i%E1%BB%81u%20Anh%20Kh%C3%B4ng%20Th%E1%BB%83%20Ng%E1%BB%9D.jpg'"," 'https://musicfourbig.000webhostapp.com/Th%C6%B0%C6%A1ng%20Em%20L%C3%A0%20%C4%90i%E1%BB%81u%20Anh%20Kh%C3%B4ng%20Th%E1%BB%83%20Ng%E1%BB%9D.mp3'"," '3'"," '0'"," '0'"," '6'"," '0'"," '7'", 0," '0')",,6283d7bb2f7b3d33360807f7
+(26," 'Anh ở đây mà'"," 'Đức Phúc'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90%E1%BB%A9c%20Ph%C3%BAc/Anh%20%E1%BB%9F%20%C4%91%C3%A2y%20m%C3%A0.jpg'"," 'https://musicfourbig.000webhostapp.com/Anh%20%E1%BB%9F%20%C4%91%C3%A2y%20m%C3%A0.mp3'"," '0'"," '0'"," '0'"," '4'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807f8
+(27," 'Cũng Đành Thôi'"," 'Đức Phúc'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90%E1%BB%A9c%20Ph%C3%BAc/C%C5%A9ng%20%C4%90%C3%A0nh%20Th%C3%B4i.jpg'"," 'https://musicfourbig.000webhostapp.com/C%C5%A9ng%20%C4%90%C3%A0nh%20Th%C3%B4i.mp3'"," '3'"," '0'"," '0'"," '4'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807f9
+(28," 'Năm Ấy'"," 'Đúc Phúc'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90%E1%BB%A9c%20Ph%C3%BAc/N%C4%83m%20%C3%81y.jpg'"," 'https://musicfourbig.000webhostapp.com/N%C4%83m%20%C3%81y.mp3'"," '0'"," '0'"," '0'"," '4'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807fa
+(29," 'Người Ơi Người Ở Đừng Về'"," 'Đức Phúc'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90%E1%BB%A9c%20Ph%C3%BAc/Ng%C6%B0%E1%BB%9Di%20%C6%A0i%20Ng%C6%B0%E1%BB%9Di%20%E1%BB%9E%20%C4%90%E1%BB%ABng%20V%E1%BB%81.jpg'"," 'https://musicfourbig.000webhostapp.com/Ng%C6%B0%E1%BB%9Di%20%C6%A0i%20Ng%C6%B0%E1%BB%9Di%20%E1%BB%9E%20%C4%90%E1%BB%ABng%20V%E1%BB%81.mp3'"," '3'"," '0'"," '0'"," '4'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807fb
+(30," 'Thế Là Tết'"," 'Đức Phúc'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90%E1%BB%A9c%20Ph%C3%BAc/Th%E1%BA%BF%20L%C3%A0%20T%E1%BA%BFt.jpg'"," 'https://musicfourbig.000webhostapp.com/Th%E1%BA%BF%20L%C3%A0%20T%E1%BA%BFt.mp3'"," '0'"," '0'"," '0'"," '4'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807fc
+(31," 'Vỡ'"," 'Đức Phúc'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90%E1%BB%A9c%20Ph%C3%BAc/V%E1%BB%A1.jpg'"," 'https://musicfourbig.000webhostapp.com/V%E1%BB%A1.mp3'"," '0'"," '0'"," '0'"," '4'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d33360807fd
+(32," 'Yêu Vội Vàng'"," 'Lê Bảo Bình'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/L%C3%AA%20B%E1%BA%A3o%20B%C3%ACnh/Y%C3%AAu%20V%E1%BB%99i%20V%C3%A0ng.jpg'"," 'https://musicfourbig.000webhostapp.com/Y%C3%AAu%20V%E1%BB%99i%20V%C3%A0ng.mp3'"," '3'"," '0'"," '0'"," '5'"," '0'"," '4'", 0," '0')",,6283d7bb2f7b3d33360807fe
+(33," 'Quay Lưng Về Nhau'"," 'Lê Bảo Bình'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/L%C3%AA%20B%E1%BA%A3o%20B%C3%ACnh/Quay%20L%C6%B0ng%20V%E1%BB%81%20Nhau.jpg'"," 'https://musicfourbig.000webhostapp.com/Quay%20L%C6%B0ng%20V%E1%BB%81%20Nhau.mp3'"," '0'"," '0'"," '0'"," '5'"," '0'"," '4'", 0," '0')",,6283d7bb2f7b3d33360807ff
+(34," 'Phải Thế Thôi'"," 'Lê Bảo Bình'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/L%C3%AA%20B%E1%BA%A3o%20B%C3%ACnh/Ph%E1%BA%A3i%20Th%E1%BA%BF%20Th%C3%B4i.jpg'"," 'https://musicfourbig.000webhostapp.com/Ph%E1%BA%A3i%20Th%E1%BA%BF%20Th%C3%B4i.mp3'"," '0'"," '0'"," '0'"," '5'"," '0'"," '4'", 0," '0')",,6283d7bb2f7b3d3336080800
+(35," 'Người Phản Bội'"," 'Lê Bảo Bình'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/L%C3%AA%20B%E1%BA%A3o%20B%C3%ACnh/Ng%C6%B0%E1%BB%9Di%20Ph%E1%BA%A3n%20B%E1%BB%99i.jpg'"," 'https://musicfourbig.000webhostapp.com/Ng%C6%B0%E1%BB%9Di%20Ph%E1%BA%A3n%20B%E1%BB%99i.mp3'"," '0'"," '0'"," '0'"," '5'"," '0'"," '4'", 0," '0')",,6283d7bb2f7b3d3336080801
+(36," 'Để Cho Anh Khóc REMIX'"," 'Lê Bảo Bình'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/L%C3%AA%20B%E1%BA%A3o%20B%C3%ACnh/%C4%90%E1%BB%83%20Cho%20Anh%20Kh%C3%B3c.jpg'"," 'https://musicfourbig.000webhostapp.com/%C4%90%E1%BB%83%20Cho%20Anh%20Kh%C3%B3c%20REMIX.mp3'"," '0'"," '0'"," '0'"," '5'"," '0'"," '4'", 0," '0')",,6283d7bb2f7b3d3336080802
+(37," 'Kết Thúc Lâu Rồi'"," 'Lê Bảo Bình'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/L%C3%AA%20B%E1%BA%A3o%20B%C3%ACnh/K%E1%BA%BFt%20Th%C3%BAc%20L%C3%A2u%20R%E1%BB%93i.jpg'"," 'https://musicfourbig.000webhostapp.com/K%E1%BA%BFt%20Th%C3%BAc%20L%C3%A2u%20R%E1%BB%93i.mp3'"," '0'"," '0'"," '0'"," '5'"," '0'"," '4'", 0," '0')",,6283d7bb2f7b3d3336080803
+(38," 'Âm Thầm Bên Em'"," 'Sơn Tùng MTP'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/S%C6%A1n%20T%C3%B9ng%20MTP/%C3%82m%20th%E1%BA%A7m%20b%C3%AAn%20em.jpg'"," 'https://musicfourbig.000webhostapp.com/%C3%82m%20Th%E1%BA%A7m%20B%C3%AAn%20Em.mp3'"," '3'"," '0'"," '0'"," '7'"," '0'"," '6'", 0," '0')",,6283d7bb2f7b3d3336080804
+(39," 'Ấn Nút Nhớ Thả Giấc Mơ'"," 'Sơn Tùng MTP'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/S%C6%A1n%20T%C3%B9ng%20MTP/%E1%BA%A4n%20n%C3%BAt%20nh%E1%BB%9B%20th%E1%BA%A3%20gi%E1%BA%A5c%20m%C6%A1.jpg'"," 'https://musicfourbig.000webhostapp.com/%E1%BA%A4n%20N%C3%BAt%20Nh%E1%BB%9B%20Th%E1%BA%A3%20Gi%E1%BA%A5c%20M%C6%A1.mp3'"," '3'"," '0'"," '0'"," '7'"," '0'"," '6'", 0," '0')",,6283d7bb2f7b3d3336080805
+(40," 'Chạy Ngay Đi'"," 'Sơn Tùng MTP'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/S%C6%A1n%20T%C3%B9ng%20MTP/Ch%E1%BA%A1y%20Ngay%20%C4%90i.jpg'"," 'https://musicfourbig.000webhostapp.com/Ch%E1%BA%A1y%20Ngay%20%C4%90i.mp3'"," '3'"," '0'"," '0'"," '7'"," '0'"," '6'", 0," '0')",,6283d7bb2f7b3d3336080806
+(41," 'Em của ngày hôm qua'"," 'Sơn Tùng MTP'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/S%C6%A1n%20T%C3%B9ng%20MTP/Em%20C%E1%BB%A7a%20Ng%C3%A0y%20H%C3%B4m%20Qua.jpg'"," 'https://musicfourbig.000webhostapp.com/Em%20c%E1%BB%A7a%20ng%C3%A0y%20h%C3%B4m%20qua.mp3'"," '3'"," '0'"," '0'"," '7'"," '0'"," '6'", 0," '0')",,6283d7bb2f7b3d3336080807
+(42," 'Lạc Trôi'"," 'Sơn Tùng MTP'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/S%C6%A1n%20T%C3%B9ng%20MTP/L%E1%BA%A1c%20Tr%C3%B4i.jpg'"," 'https://musicfourbig.000webhostapp.com/L%E1%BA%A1c%20Tr%C3%B4i.mp3'"," '3'"," '0'"," '0'"," '7'"," '0'"," '6'", 0," '0')",,6283d7bb2f7b3d3336080808
+(43," 'Nắng Ấm Xa Dần'"," 'Sơn TÙng MTP'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/S%C6%A1n%20T%C3%B9ng%20MTP/N%E1%BA%AFng%20%E1%BA%A4m%20Xa%20D%E1%BA%A7n.jpg'"," 'https://musicfourbig.000webhostapp.com/N%E1%BA%AFng%20%E1%BA%A4m%20Xa%20D%E1%BA%A7n.mp3'"," '3'"," '0'"," '0'"," '7'"," '0'"," '6'", 0," '0')",,6283d7bb2f7b3d3336080809
+(44," 'Nơi Này Có Anh'"," 'Sơn Tùng MTP'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/S%C6%A1n%20T%C3%B9ng%20MTP/N%C6%A1i%20N%C3%A0y%20C%C3%B3%20Anh.jpg'"," 'https://musicfourbig.000webhostapp.com/N%C6%A1i%20N%C3%A0y%20C%C3%B3%20Anh.mp3'"," '3'"," '0'"," '0'"," '7'"," '0'"," '6'", 0," '0')",,6283d7bb2f7b3d333608080a
+(45," 'AS IF ITS YOUR LAST'"," 'Black Pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'https://music4b.000webhostapp.com/AS%20IF%20ITS%20YOUR%20LAST.mp3'"," '0'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608080b
+(46," 'BOOMBAYAH'"," 'black pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'https://music4b.000webhostapp.com/BOOMBAYAH.mp3'"," '1'"," '0'"," '0'"," '0'"," '1'"," '0'", 0," '0')",,6283d7bb2f7b3d333608080c
+(47," 'DDU-DU DDU-DU'"," 'Black Pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'https://music4b.000webhostapp.com/DDU-DU%20DDU-DU.mp3'"," '1'"," '0'"," '0'"," '0'"," '1'"," '0'", 0," '0')",,6283d7bb2f7b3d333608080d
+(48," 'How You Like That'"," 'Black Pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'https://music4b.000webhostapp.com/How%20You%20Like%20That.mp3'"," '1'"," '0'"," '0'"," '0'"," '1'"," '0'", 0," '0')",,6283d7bb2f7b3d333608080e
+(49," 'Kill This Love'"," 'Black Pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'https://music4b.000webhostapp.com/Kill%20This%20Love.mp3'"," '1'"," '0'"," '0'"," '0'"," '1'"," '0'", 0," '0')",,6283d7bb2f7b3d333608080f
+(50," 'SOLO'"," 'Black Pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'https://music4b.000webhostapp.com/SOLO.mp3'"," '1'"," '0'"," '0'"," '0'"," '1'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080810
+(51," 'Havana'"," 'Camila Cabello'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/HAVANA.jpg'"," 'https://music4b.000webhostapp.com/Havana.mp3'"," '1'"," '0'"," '0'"," '0'"," '3'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080811
+(52," 'Senorita'"," 'Camila Cabello'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Senorita.jpg'"," 'https://music4b.000webhostapp.com/Senrorita.mp3'"," '1'"," '0'"," '0'"," '0'"," '3'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080812
+(53," 'One Call Away'"," 'Charlie Puth'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Charlie%20Puth.jpg\r\n'"," 'https://music4b.000webhostapp.com/One%20Call%20Away.mp3'"," '1'"," '0'"," '0'"," '0'"," '4'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080813
+(54," 'See You Again'"," 'Charlie Puth'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Charlie%20Puth.jpg'"," 'https://music4b.000webhostapp.com/See%20You%20Again.mp3'"," '1'"," '0'"," '0'"," '0'"," '4'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080814
+(55," 'We Don\'t Talk Anymore'"," 'Charlie Puth\r\n'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Charlie%20Puth.jpg'"," 'https://music4b.000webhostapp.com/We%20Don\'t%20Talk%20Anymore.mp3'"," '1'"," '0'"," '0'"," '0'"," '4'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080815
+(56," 'Attention'"," 'Charlie Puth'"," '\r\nhttps://music4b.000webhostapp.com/HinhAnh/PhoBien/Charlie%20Puth.jpg'"," 'https://music4b.000webhostapp.com/Attention.mp3'"," '1'"," '0'"," '0'"," '0'"," '4'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080816
+(57," 'Done For Me'"," 'Charlie Puth'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Charlie%20Puth.jpg'"," 'https://music4b.000webhostapp.com/Done%20For%20Me.mp3'"," '1'"," '0'"," '0'"," '0'"," '4'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080817
+(58," 'How Long'"," 'Charlie Puth'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Charlie%20Puth.jpg'"," 'https://music4b.000webhostapp.com/How%20Long.mp3'"," '1'"," '0'"," '0'"," '0'"," '4'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080818
+(59," 'Marvin Gaye ft. Meghan Trainor'"," 'Charlie Puth'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Charlie%20Puth.jpg'"," 'https://music4b.000webhostapp.com/Marvin%20Gaye%20ft.%20Meghan%20Trainor.mp3'"," '1'"," '0'"," '0'"," '0'"," '4'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080819
+(60," 'Baby'"," 'Justin Bieber'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Justin%20Bieber.jpg\r\n'"," 'https://music4b.000webhostapp.com/Baby.mp3'"," '1'"," '0'"," '0'"," '0'"," '5'"," '0'", 0," '0')",,6283d7bb2f7b3d333608081a
+(61," 'One Time'"," 'Justin Bieber'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Justin%20Bieber.jpg'"," 'https://music4b.000webhostapp.com/One%20Time.mp3'"," '1'"," '0'"," '0'"," '0'"," '5'"," '0'", 0," '0')",,6283d7bb2f7b3d333608081b
+(62," 'Somebody To Love'"," 'Justin Bieber'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Justin%20Bieber.jpg'"," 'https://music4b.000webhostapp.com/Somebody%20To%20Love.mp3'"," '1'"," '0'"," '0'"," '0'"," '5'"," '0'", 0," '0')",,6283d7bb2f7b3d333608081c
+(63," 'What Do You Mean'"," 'Justin Bieber'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Justin%20Bieber.jpg'"," 'https://music4b.000webhostapp.com/What%20Do%20You%20Mean.mp3'"," '1'"," '0'"," '0'"," '0'"," '5'"," '0'", 0," '0')",,6283d7bb2f7b3d333608081d
+(64," 'Yummy'"," 'Justin Bieber'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Justin%20Bieber.jpg'"," 'https://music4b.000webhostapp.com/Yummy.mp3'"," '1'"," '0'"," '0'"," '0'"," '5'"," '0'", 0," '0')",,6283d7bb2f7b3d333608081e
+(65," 'I\'m The One'"," 'Justin Bieber'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Justin%20Bieber.jpg'"," 'https://music4b.000webhostapp.com/I_m%20The%20One.mp3'"," '1'"," '0'"," '0'"," '0'"," '5'"," '0'", 0," '0')",,6283d7bb2f7b3d333608081f
+(66," 'Love Yourself'"," 'Justin Bieber'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Justin%20Bieber.jpg'"," 'https://music4b.000webhostapp.com/Love%20Yourself.mp3'"," '1'"," '0'"," '0'"," '0'"," '5'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080820
+(67," 'Never Say Never'"," 'Justin Bieber'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Justin%20Bieber.jpg'"," 'https://music4b.000webhostapp.com/Never%20Say%20Never.mp3'"," '1'"," '0'"," '0'"," '0'"," '5'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080821
+(68," 'Monkey'"," 'Tones and I'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/TONE%20and%20I.jpg'"," 'https://music4b.000webhostapp.com/Dance%20Monkey.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080822
+(69," 'Despacito'"," 'Luis Fonsi ft. Daddy Yankee'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/depasito.jpg'"," 'https://music4b.000webhostapp.com/Despacito.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080823
+(70," 'Faded'"," 'Alan Walker'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Alan%20Walker.jpg'"," 'https://music4b.000webhostapp.com/Faded.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080824
+(71," 'Sing Me To Sleep'"," 'Alan Walker'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Alan%20Walker.jpg'"," 'https://music4b.000webhostapp.com/Sing%20Me%20To%20Sleep.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080825
+(72," 'Happy'"," 'Pharrell Williams'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Happy.jpg'"," 'https://music4b.000webhostapp.com/Happy.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080826
+(73," 'Believer'"," 'Imagine Dragons'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Imagine%20Dragon.jpg'"," 'https://music4b.000webhostapp.com/Imagine%20Dragons.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080827
+(74," 'In The End'"," 'Linkin Park'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/in%20the%20end.jpg'"," 'https://music4b.000webhostapp.com/In%20The%20End.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080828
+(75," 'Just Give Me A Reason'"," 'P!nk ft. Nate Ruess'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Pink%20Nate.jpg'"," 'https://music4b.000webhostapp.com/Just%20Give%20Me%20A%20Reason.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080829
+(76," 'lalala'"," 'Y2K"," bbno$'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Y2K%20bbnot.jpg'"," 'https://music4b.000webhostapp.com/Lalala.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0,,6283d7bb2f7b3d333608082a
+(77," 'Laxed'"," 'Jawsh 685'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Jwash.jpg'"," 'https://music4b.000webhostapp.com/Laxed.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608082b
+(78," 'Let Me Down Slowly'"," 'Alec Benjamin'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Alec%20Benjamin.jpg'"," 'https://music4b.000webhostapp.com/Let%20Me%20Down%20Slowly.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608082c
+(79," 'Surga'"," 'Maroom 5'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Maroom%205.jpg'"," 'https://music4b.000webhostapp.com/Surga.mp3'"," '1'"," '0'"," '0'"," '0'"," '6'"," '0'", 0," '0')",,6283d7bb2f7b3d333608082d
+(80," 'Memories'"," 'Maroon 5'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Maroom%205.jpg'"," 'https://music4b.000webhostapp.com/Memories.mp3'"," '1'"," '0'"," '0'"," '0'"," '6'"," '0'", 0," '0')",,6283d7bb2f7b3d333608082e
+(81," 'Roxanne'"," 'Arizona Zervas'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/ROXANE.jpg'"," 'https://music4b.000webhostapp.com/ROXANNE.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608082f
+(82," 'Reality'"," 'Lost Frequencies'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Reality.jpg'"," 'https://music4b.000webhostapp.com/Reality.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080830
+(83," 'Shape of you'"," 'Ed Sheeran'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/shap%20of%20you.jpg'"," 'https://music4b.000webhostapp.com/Shape%20of%20You.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080831
+(84," 'Bad Guy'"," 'Billie Eilish'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/bad%20guy.jpg'"," 'https://music4b.000webhostapp.com/Bad%20GUY.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080832
+(85," 'Broken Angle'"," 'ARASH feat Helena'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/bad%20guy.jpg'"," 'https://music4b.000webhostapp.com/Broken%20Angel.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080833
+(86," 'Can We Kiss Forever?'"," 'Kina'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Can%20we%20kiss.jpg'"," 'https://music4b.000webhostapp.com/Can%20We%20Kiss%20Forever.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080834
+(87," 'Waiting For Love'"," 'Avicii'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/waiting%20for%20love.jpg'"," 'https://music4b.000webhostapp.com/Waiting%20For%20Love.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080835
+(88," 'Closer'"," 'The Chainsmokers'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Closer.jpg'"," 'https://music4b.000webhostapp.com/Closer.mp3'"," '1'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080836
+(89," 'Môt Năm Mới Bình An'"," 'Sơn Tùng MTP'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Chuc%20Tet.jpg'"," 'https://musicfourbig.000webhostapp.com/M%E1%BB%99t%20N%C4%83m%20M%E1%BB%9Bi%20Binh%20An.mp3'"," '0'"," '0'"," '0'"," '7'"," '0'"," '6'", 0," '1')",,6283d7bb2f7b3d3336080837
+(90," 'Hãy Trao Cho Anh'"," 'Sơn TÙng MTP'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/S%C6%A1n%20T%C3%B9ng%20MTP/Em%20C%E1%BB%A7a%20Ng%C3%A0y%20H%C3%B4m%20Qua.jpg'"," 'https://music4b.000webhostapp.com/H%C3%A3y%20Trao%20Cho%20Anh.mp3'"," '3'"," '0'"," '0'"," '7'"," '0'"," '6'", 0," '0')",,6283d7bb2f7b3d3336080838
+(91," 'Chưa Bao Giờ'"," 'Trung Quân'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Ch%C6%B0a%20Bao%20Gi%E1%BB%9D%20Trung%20Quang.jpg'"," 'https://musicfourbig.000webhostapp.com/Ch%C6%B0a%20Bao%20Gi%E1%BB%9D%20Trung%20Qu%C3%A2n.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080839
+(92," 'Chiều Nay Không Có Mưa Bay'"," 'Trung Quân\r\n'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Chi%E1%BB%81u%20Nay%20Kh%C3%B4ng%20M%C6%B0a%20Bay.jpg\r\n'"," 'https://musicfourbig.000webhostapp.com/Chi%E1%BB%81u%20Nay%20Kh%C3%B4ng%20M%C6%B0a%20Bay.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608083a
+(93," 'Day Dứt Nỗi Đau'"," 'Mr.Siro'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Day%20D%E1%BB%A9t%20N%E1%BB%97i%20%C4%90au.jpg\r\n'"," 'https://musicfourbig.000webhostapp.com/Day%20D%E1%BB%A9t%20N%E1%BB%97i%20%C4%90au.mp3'"," '3'"," '0'"," '0'"," '8'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608083b
+(94," 'Dưới Những Cơn Mưa'"," 'Mr.Siro'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Day%20D%E1%BB%A9t%20N%E1%BB%97i%20%C4%90au.jpg\r\n'"," 'https://musicfourbig.000webhostapp.com/T%C3%ACnh%20y%C3%AAu%20ch%E1%BA%AFp%20v%C3%A1.mp3'"," '3'"," '0'"," '0'"," '8'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608083c
+(95," 'Khóc Cùng Em'"," 'Mr.Siro'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Day%20D%E1%BB%A9t%20N%E1%BB%97i%20%C4%90au.jpg'"," 'https://musicfourbig.000webhostapp.com/Kh%C3%B3c%20c%C3%B9ng%20em%20remix.mp3'"," '3'"," '0'"," '0'"," '8'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608083d
+(96," 'Sau Tất Cả'"," 'Tiên Cookie'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Sau%20T%E1%BA%A5t%20C%E1%BA%A3.jpg'"," 'https://musicfourbig.000webhostapp.com/Sau%20T%E1%BA%A5t%20C%E1%BA%A3.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608083e
+(97," 'Thời Gian Sẽ Trả Lời'"," 'Tiên Cookie'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Sau%20T%E1%BA%A5t%20C%E1%BA%A3.jpg'"," 'https://musicfourbig.000webhostapp.com/Th%E1%BB%9Di%20gian%20s%E1%BA%BD%20tr%E1%BA%A3%20l%E1%BB%9Di.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608083f
+(98," '\r\nBuồn Không Em'"," 'Đạt G'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Buon%20khong%20em.jpg'"," 'https://musicfourbig.000webhostapp.com/Bu%E1%BB%93n%20Kh%C3%B4ng%20Em.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080840
+(99," 'Túy Âm'"," 'Masew'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Tuy%20am.jpg'"," 'https://musicfourbig.000webhostapp.com/T%C3%BAy%20%C3%82m.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080841
+(100," 'Lửng Lơ'"," 'Masew'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/L%E1%BB%ADng%20L%C6%A1.jpg'"," 'https://musicfourbig.000webhostapp.com/L%E1%BB%ADng%20L%C6%A1.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080842
+(101," 'Sau Tất Cả'"," 'Erik'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Sau%20tat%20ca.jpg'"," 'https://musicfourbig.000webhostapp.com/Sau%20T%E1%BA%A5t%20C%E1%BA%A3.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080843
+(102," 'Yêu 5'"," 'Rhymastic'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Y%C3%AAu%205.jpg'"," 'https://musicfourbig.000webhostapp.com/Y%C3%AAu%205.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080844
+(103," '1 Phút'"," 'Andiez'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/1%20Phut.jpg'"," 'https://musicfourbig.000webhostapp.com/1%20Ph%C3%BAt.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080845
+(104," 'Suýt Nữa Thì'"," 'Andiez'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Suyt%20nua%20thi.jpg'"," 'https://music4b.000webhostapp.com/Su%C3%BDt%20N%E1%BB%AFa%20Th%C3%AC.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080846
+(105," 'Người Ấy'"," 'Trịnh Thăng Bình'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Ng%C6%B0%E1%BB%9Di%20%E1%BA%A4y.jpg'"," 'https://musicfourbig.000webhostapp.com/Ng%C6%B0%E1%BB%9Di%20%E1%BA%A4y.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080847
+(106," 'Say You Do'"," 'Tiên Tiên'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Say%20You%20DO.jpg'"," 'https://musicfourbig.000webhostapp.com/Say%20You%20Do.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080848
+(107," 'Sáng Mắt Chưa'"," 'Trúc Nhân'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/S%C3%A1ng%20M%E1%BA%AFt%20Ch%C6%B0a.jpg'"," 'https://musicfourbig.000webhostapp.com/Li%E1%BB%81u%20thu%E1%BB%91c%20cho%20tr%C3%A1i%20tim.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080849
+(108," 'Người Ta Có Thương Mình Đâu'"," 'Trcú Nhân'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Ng%C6%B0%E1%BB%9Di%20Ta%20C%C3%B3%20T%E1%BB%ABng%20Th%C6%B0%C6%A1ng%20M%C3%ACnh.jpg'"," 'https://musicfourbig.000webhostapp.com/Ng%C6%B0%E1%BB%9Di%20Ta%20C%C3%B3%20Th%C6%B0%C6%A1ng%20m%C3%ACnh%20%C4%91%C3%A2u.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608084a
+(109," 'Liều Thuốc Cho Trái Tim'"," 'Nguyễn Đình Vũ'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Nguyen%20DInh%20Vu.jpg'"," 'https://musicfourbig.000webhostapp.com/Li%E1%BB%81u%20thu%E1%BB%91c%20cho%20tr%C3%A1i%20tim.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608084b
+(110," 'Yêu Lại Từ Đầu'"," 'Khắc Việt'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Y%C3%AAu%20L%E1%BA%A1i%20T%E1%BB%AB%20%C4%90%E1%BA%A7u.jpg'"," 'https://musicfourbig.000webhostapp.com/Y%C3%AAu%20L%E1%BA%A1i%20T%E1%BB%AB%20%C4%90%E1%BA%A7u.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608084c
+(111," 'Anh Khác Hay Em Khác'"," 'Khắc Việt'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Anh%20Kh%C3%A1c%20Hay%20Em%20Kh%C3%A1c.jpg'"," 'https://musicfourbig.000webhostapp.com/Anh%20Kh%C3%A1c%20Hay%20Em%20Kh%C3%A1c.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608084d
+(112," 'Gần Ngay Trước Mắt'"," 'Thùy Chi'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/G%E1%BA%A7n%20Ngay%20tr%C6%B0%E1%BB%9Bc%20M%E1%BA%AFt.jpg'"," 'https://musicfourbig.000webhostapp.com/G%E1%BA%A7n%20Ngay%20tr%C6%B0%E1%BB%9Bc%20M%E1%BA%AFt.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608084e
+(113," 'TÌnh Yêu Khủng Long'"," 'FAY'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/T%C3%ACnh%20Y%C3%AAu%20Kh%E1%BB%A7ng%20Long.jpg'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/T%C3%ACnh%20Y%C3%AAu%20Kh%E1%BB%A7ng%20Long.jpg'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608084f
+(114," 'Mượn Rượu TỎ TÌnh'"," 'Big Daddy'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Muon%20Ruou%20to%20tinh.jpg'"," 'https://musicfourbig.000webhostapp.com/M%C6%B0%E1%BB%A3n%20R%C6%B0%E1%BB%A3u%20T%E1%BB%8F%20T%C3%ACnh.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080850
+(115," 'Về Nhà Ăn Tết'"," 'Big Daddy'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/ve%20nha%20an%20tet.jpg'"," 'https://musicfourbig.000webhostapp.com/V%E1%BB%81%20Nh%C3%A0%20%C4%82n%20T%E1%BA%BFt.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '1')",,6283d7bb2f7b3d3336080851
+(116," 'Nhạt'"," 'Phan Mạnh QUỳnh'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Nh%E1%BA%A1t.jpg'"," 'https://musicfourbig.000webhostapp.com/Nh%E1%BA%A1t.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080852
+(117," 'Thế Giới Ảo TÌnh TÌnh Yêu Thật'"," 'Trịnh Đình Quang'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Trinh%20dinh%20quang.jpg'"," 'https://musicfourbig.000webhostapp.com/Th%E1%BA%BF%20Gi%E1%BB%9Bi%20%E1%BA%A2o%20T%C3%ACnh%20Y%C3%AAu%20Th%E1%BA%ADt.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080853
+(118," 'Đi Để Trở Về 2'"," 'Soobin Hoàng Sơn'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Di%20de%20tro%20ve.jpg'"," 'https://musicfourbig.000webhostapp.com/%C4%90i%20%C4%90%E1%BB%83%20Tr%E1%BB%9F%20V%E1%BB%81.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '1')",,6283d7bb2f7b3d3336080854
+(119," 'Đếm Ngày Xa Em'"," 'Only C'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Only%20C.jpg'"," 'https://music4b.000webhostapp.com/%C4%90%E1%BA%BFm%20Ng%C3%A0y%20Xa%20Em.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080855
+(120," 'Anh Không Đòi QUà'"," 'Only C"," Karik'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Only%20C.jpg'"," 'https://music4b.000webhostapp.com/Anh%20Khong%20Doi%20Qua.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0,,6283d7bb2f7b3d3336080856
+(121," 'Bốc Bát Họ'"," 'Bình Gold'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Boc%20bat%20ho.jpg'"," 'https://music4b.000webhostapp.com/B%E1%BB%91c%20B%C3%A1t%20H%E1%BB%8D.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080857
+(122," 'Cô Thắm Không Về'"," 'Phát Hồ x JokeS Bii x Sinike ft. DinhLong'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Co%20tham%20khong%20ve.jpg'"," 'https://music4b.000webhostapp.com/C%C3%B4%20Th%E1%BA%AFm%20Kh%C3%B4ng%20V%E1%BB%81.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080858
+(123," 'Gác Lại Âu Lo'"," 'Miu Lê"," Da Lab'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Gac%20lai%20lo%20au.jpg'"," 'https://music4b.000webhostapp.com/G%C3%A1c%20l%E1%BA%A1i%20%C3%A2u%20lo.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0,,6283d7bb2f7b3d3336080859
+(124," 'Thanh Xuân '"," 'Da Lab'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Thanh%20xuan.jpg'"," 'https://music4b.000webhostapp.com/Thanh%20Xu%C3%A2n.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608085a
+(125," 'Đã Lỡ Yêu Em Nhiều'"," 'Justa Tee'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Da%20lo%20yeu%20em%20nhieu.jpg'"," 'https://music4b.000webhostapp.com/%C4%90%C3%A3%20L%E1%BB%A1%20Y%C3%AAu%20Em%20Nhi%E1%BB%81u.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608085b
+(126," 'Thằng Điên'"," 'Justa Tee '"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Thang%20dien.jpg'"," 'https://music4b.000webhostapp.com/Th%E1%BA%B1ng%20%C4%90i%C3%AAn.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608085c
+(127," 'Hoa Hải Đường'"," 'Jack'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Hoa%20hai%20duong.jpg'"," 'https://music4b.000webhostapp.com/Hoa%20H%E1%BA%A3i%20%C4%90%C6%B0%E1%BB%9Dng.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608085d
+(128," 'Hồng Nhan'"," 'Jack x K-ICM'"," 'https://music4b.000webhostapp.com/Hoa%20H%E1%BA%A3i%20%C4%90%C6%B0%E1%BB%9Dng.mp3'"," 'https://music4b.000webhostapp.com/H%E1%BB%93ng%20Nhan.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608085e
+(129," 'SÓng Gió'"," 'Jack x K-ICM'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/S%C3%B3ng%20Gi%C3%B3.jpg'"," 'https://music4b.000webhostapp.com/S%C3%B3ng%20Gi%C3%B3.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608085f
+(130," 'Bạc Phận'"," 'Jack x K-ICM'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Bac%20Phan.jpg'"," 'https://music4b.000webhostapp.com/B%E1%BA%A1c%20Ph%E1%BA%ADn.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080860
+(131," 'Hoa Nở Không Màu'"," 'Hoài Lâm'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Hoa%20no%20khong%20mau.jpg'"," 'https://music4b.000webhostapp.com/H%C3%B3a%20N%E1%BB%9F%20Kh%C3%B4ng%20M%C3%A0u.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080861
+(132," 'Lời Yêu Ngây Dại'"," 'Kha'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Loi%20yeu%20ngay%20dai.jpg'"," 'https://music4b.000webhostapp.com/L%E1%BB%9Di%20Y%C3%AAu%20Ng%C3%A2y%20D%E1%BA%A1i.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080862
+(133," 'Yêu Từ Đâu Mà Ra'"," 'Lil ZPOET'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/yeu%20tu%20dau%20ma%20ra.jpg'"," 'https://music4b.000webhostapp.com/Y%C3%AAu%20T%E1%BB%AB%20%C4%90%C3%A2u%20M%C3%A0%20Ra.mp3'"," '3'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080863
+(134," 'Chúc Tết'"," 'nhiều ca sĩ'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Chuc%20Tet.jpg'"," 'https://musicfourbig.000webhostapp.com/Ch%C3%BAc%20T%E1%BA%BFt.mp3'"," '0'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '1')",,6283d7bb2f7b3d3336080864
+(135," 'Tết Đong Đầy'"," 'Anh Khóa x Kay Trần'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Tet%20dong%20day.jpg'"," 'https://musicfourbig.000webhostapp.com/T%E1%BA%BFt%20%C4%90ong%20%C4%90%E1%BA%A7y.mp3'"," '0'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '1')",,6283d7bb2f7b3d3336080865
+(136," 'Xuân Đã Về'"," 'Không Rõ'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Chuc%20tet2.jpg'"," 'https://musicfourbig.000webhostapp.com/Xu%C3%A2n%20%C4%90%C3%A3%20V%E1%BB%81%20Remix.mp3'"," '0'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '1')",,6283d7bb2f7b3d3336080866
+(137," 'Ngày Buồn ( Band 03 )'"," 'N.Duy x P.Thủy x H.Thường x T.Ba'"," 'https://music4b.000webhostapp.com/HinhAnh/BaiHat/ngay%20buon.jpg'"," 'https://music4b.000webhostapp.com/Ngay%20Buon.m4a'"," '0'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080867
+(138," 'Nói với em ^.^'"," 'BigDady'"," 'https://music4b.000webhostapp.com/240494798_1555347028136723_7687810014802095116_n.jpg'"," 'https://music4b.000webhostapp.com/N%C3%B3i%20V%E1%BB%9Bi%20Em%20%20BigDaddy.mp3'"," '0'"," '0'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080868
+(139," 'Tình yêu màu hồng'"," 'Freak D x Xám'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Discover%20Weekly/tinhyeumauhong.jpg'"," 'https://music4b.000webhostapp.com/T%C3%ACnh%20Y%C3%AAu%20M%C3%A0u%20H%E1%BB%93ng%20H%E1%BB%93%20V%C4%83n%20Qu%C3%BD%20x%20X%C3%A1m%20x%20Freak%20D.mp3'"," '0'"," '6'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d3336080869
+(140," 'Chuyện rằng'"," 'Thịnh Suy'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Discover%20Weekly/chuy%E1%BB%87n%20r%E1%BA%B1ng.jpg'"," 'https://music4b.000webhostapp.com/CHUY%E1%BB%86N%20R%E1%BA%B0NG.mp3'"," '0'"," '6'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608086a
+(141," 'Đường tôi trở em về'"," 'Freak D'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Discover%20Weekly/duongtoitroemve.jpg'"," 'https://music4b.000webhostapp.com/%C4%90%C6%B0%E1%BB%9Dng%20T%C3%B4i%20Ch%E1%BB%9F%20Em%20V%E1%BB%81%20Freak%20D.mp3'"," '0'"," '6'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608086b
+(142," '\r\nYêu từ đâu mà ra'"," 'Lil ZPoet'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Discover%20Weekly/yeutudaumara.jpg'"," 'https://music4b.000webhostapp.com/Y%C3%AAu%20T%E1%BB%AB%20%C4%90%C3%A2u%20M%C3%A0%20Ra%20%20Lil%20ZPOET.mp3'"," '0'"," '6'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608086c
+(143," 'Tình nhạt phai'"," 'Vicky Nhung'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Discover%20Weekly/tinhnhatphai.jpg'"," 'https://music4b.000webhostapp.com/T%C3%ACnh%20nh%E1%BA%A1t%20phai%20Vicky%20Nhung%20cover.mp3'"," '0'"," '6'"," '0'"," '0'"," '0'"," '0'", 0," '0')",,6283d7bb2f7b3d333608086d
+(144," 'At my worts'"," 'Pink Sweat'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Discover%20Weekly/atmyworts.jpg'"," 'https://music4b.000webhostapp.com/Maddox%20At%20My%20Worst.mp3'"," '0'"," '6'"," '0'"," '0'"," '0'"," '0'", 0," '0');",,6283d7bb2f7b3d333608086e
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608086f
+-- --------------------------------------------------------,,,,,,,,,,,,,,6283d7bb2f7b3d3336080870
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080871
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080872
+-- Cấu trúc bảng cho bảng `baihatthuvienplaylist`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080873
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080874
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080875
+CREATE TABLE `baihatthuvienplaylist` (,,,,,,,,,,,,,,6283d7bb2f7b3d3336080876
+  `IdBaiHatThuVienPlayList` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080877
+  `IdThuVienPlayList` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080878
+  `IdBaiHat` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080879
+  `TenBaiHat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608087a
+  `TenCaSi` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608087b
+  `HinhBaiHat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608087c
+  `LinkBaiHat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608087d
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;,,,,,,,,,,,,,,6283d7bb2f7b3d333608087e
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608087f
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080880
+-- Đang đổ dữ liệu cho bảng `baihatthuvienplaylist`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080881
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080882
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080883
+INSERT INTO `baihatthuvienplaylist` (`IdBaiHatThuVienPlayList`, `IdThuVienPlayList`, `IdBaiHat`, `TenBaiHat`, `TenCaSi`, `HinhBaiHat`, `LinkBaiHat`) VALUES,,,,,,,,6283d7bb2f7b3d3336080884
+(1, 3, 1," 'Bad guy'"," 'ahihi'"," 'https://music4b.000webhostapp.com/HinhAnh/BaiHat/ngay%20buon.jpg'"," 'https://music4b.000webhostapp.com/Bad%20GUY.mp3')",,,,,,,,6283d7bb2f7b3d3336080885
+(2, 72, 84," 'Bad Guy'"," 'Billie Eilish'"," 'https://music4b.000webhostapp.com/HinhAnh/BaiHat/ngay%20buon.jpg'"," 'https://music4b.000webhostapp.com/Bad%20GUY.mp3')",,,,,,,,6283d7bb2f7b3d3336080886
+(6, 72, 50," 'SOLO'"," 'Black Pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'https://music4b.000webhostapp.com/SOLO.mp3')",,,,,,,,6283d7bb2f7b3d3336080887
+(7, 72, 50," 'SOLO'"," 'Black Pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'https://music4b.000webhostapp.com/SOLO.mp3')",,,,,,,,6283d7bb2f7b3d3336080888
+(8, 72, 50," 'SOLO'"," 'Black Pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'https://music4b.000webhostapp.com/SOLO.mp3')",,,,,,,,6283d7bb2f7b3d3336080889
+(9, 73, 50," 'SOLO'"," 'Black Pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'https://music4b.000webhostapp.com/SOLO.mp3')",,,,,,,,6283d7bb2f7b3d333608088a
+(10, 73, 41," 'Em của ngày hôm qua'"," 'Sơn Tùng MTP'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/S%C6%A1n%20T%C3%B9ng%20MTP/Em%20C%E1%BB%A7a%20Ng%C3%A0y%20H%C3%B4m%20Qua.jpg'"," 'https://musicfourbig.000webhostapp.com/Em%20c%E1%BB%A7a%20ng%C3%A0y%20h%C3%B4m%20qua.mp3')",,,,,,,,6283d7bb2f7b3d333608088b
+(11, 73, 13," 'Anh Đếch Cần Nhiều ngoài em'"," 'Đen Vâu'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90en%20V%C3%A2u/Anh%20%C4%90%E1%BA%BFch%20C%E1%BA%A7n%20G%C3%AC%20Ngo%C3%A0i%20Em.jpg'"," 'https://musicfourbig.000webhostapp.com/Anh%20%C4%90%E1%BA%BFch%20C%E1%BA%A7n%20Nhi%E1%BB%81u%20ngo%C3%A0i%20em.mp3')",,,,,,,,6283d7bb2f7b3d333608088c
+(12, 73, 111," 'Anh Khác Hay Em Khác'"," 'Khắc Việt'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Anh%20Kh%C3%A1c%20Hay%20Em%20Kh%C3%A1c.jpg'"," 'https://musicfourbig.000webhostapp.com/Anh%20Kh%C3%A1c%20Hay%20Em%20Kh%C3%A1c.mp3')",,,,,,,,6283d7bb2f7b3d333608088d
+(13, 73, 45," 'AS IF ITS YOUR LAST'"," 'Black Pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'https://music4b.000webhostapp.com/AS%20IF%20ITS%20YOUR%20LAST.mp3')",,,,,,,,6283d7bb2f7b3d333608088e
+(21, 22, 84," 'Bad Guy'"," 'Billie Eilish'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/bad%20guy.jpg'"," 'https://music4b.000webhostapp.com/Bad%20GUY.mp3')",,,,,,,,6283d7bb2f7b3d333608088f
+(44, 85, 4," 'Gửi Anh Xa Nhớ'"," 'Bích Phương'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/B%C3%ADch%20Ph%C6%B0%C6%A1ng/G%E1%BB%ADi%20Anh%20Xa%20Nh%E1%BB%9B.jpg'"," 'https://musicfourbig.000webhostapp.com/G%E1%BB%ADi%20Anh%20Xa%20Nh%E1%BB%9B.mp3')",,,,,,,,6283d7bb2f7b3d3336080890
+(45, 91, 2," 'Bùa Yêu'"," 'Bích Phưuong'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/B%C3%ADch%20Ph%C6%B0%C6%A1ng/B%C3%B9a%20Y%C3%AAu.jpg'"," 'https://musicfourbig.000webhostapp.com/B%C3%B9a%20Y%C3%AAu.mp3')",,,,,,,,6283d7bb2f7b3d3336080891
+(46, 91, 14," 'Bài Này Chil Phết'"," 'Đen Vâu'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90en%20V%C3%A2u/B%C3%A0i%20N%C3%A0y%20Chil%20Ph%E1%BA%BFt.jpg'"," 'https://musicfourbig.000webhostapp.com/B%C3%A0i%20N%C3%A0y%20Chil%20Ph%E1%BA%BFt.mp3')",,,,,,,,6283d7bb2f7b3d3336080892
+(47, 91, 25," 'Thương Em Là Điều Anh Không Thể Ngờ'"," 'Noo Phước Thịnh'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/Noo%20Ph%C6%B0%E1%BB%9Bc%20Th%E1%BB%8Bnh/Th%C6%B0%C6%A1ng%20Em%20L%C3%A0%20%C4%90i%E1%BB%81u%20Anh%20Kh%C3%B4ng%20Th%E1%BB%83%20Ng%E1%BB%9D.jpg'"," 'https://musicfourbig.000webhostapp.com/Th%C6%B0%C6%A1ng%20Em%20L%C3%A0%20%C4%90i%E1%BB%81u%20Anh%20Kh%C3%B4ng%20Th%E1%BB%83%20Ng%E1%BB%9D.mp3')",,,,,,,,6283d7bb2f7b3d3336080893
+(48, 91, 41," 'Em của ngày hôm qua'"," 'Sơn Tùng MTP'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/S%C6%A1n%20T%C3%B9ng%20MTP/Em%20C%E1%BB%A7a%20Ng%C3%A0y%20H%C3%B4m%20Qua.jpg'"," 'https://musicfourbig.000webhostapp.com/Em%20c%E1%BB%A7a%20ng%C3%A0y%20h%C3%B4m%20qua.mp3')",,,,,,,,6283d7bb2f7b3d3336080894
+(49, 91, 53," 'One Call Away'"," 'Charlie Puth'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Charlie%20Puth.jpg\r\n'"," 'https://music4b.000webhostapp.com/One%20Call%20Away.mp3')",,,,,,,,6283d7bb2f7b3d3336080895
+(50, 91, 66," 'Love Yourself'"," 'Justin Bieber'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Justin%20Bieber.jpg'"," 'https://music4b.000webhostapp.com/Love%20Yourself.mp3')",,,,,,,,6283d7bb2f7b3d3336080896
+(51, 91, 71," 'Sing Me To Sleep'"," 'Alan Walker'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Alan%20Walker.jpg'"," 'https://music4b.000webhostapp.com/Sing%20Me%20To%20Sleep.mp3')",,,,,,,,6283d7bb2f7b3d3336080897
+(52, 91, 82," 'Reality'"," 'Lost Frequencies'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Reality.jpg'"," 'https://music4b.000webhostapp.com/Reality.mp3')",,,,,,,,6283d7bb2f7b3d3336080898
+(53, 91, 102," 'Yêu 5'"," 'Rhymastic'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Y%C3%AAu%205.jpg'"," 'https://musicfourbig.000webhostapp.com/Y%C3%AAu%205.mp3')",,,,,,,,6283d7bb2f7b3d3336080899
+(54, 73, 1," 'Bao Giờ Lấy Chồng'"," 'Bích Phương'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/B%C3%ADch%20Ph%C6%B0%C6%A1ng/Bao%20Gi%E1%BB%9D%20L%E1%BA%A5y%20Ch%E1%BB%93ng.jpg'"," 'https://musicfourbig.000webhostapp.com/Bao%20Gi%E1%BB%9D%20L%C3%A1y%20Ch%E1%BB%93ng.mp3')",,,,,,,,6283d7bb2f7b3d333608089a
+(55, 73, 50," 'SOLO'"," 'Black Pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'https://music4b.000webhostapp.com/SOLO.mp3')",,,,,,,,6283d7bb2f7b3d333608089b
+(56, 3, 84," 'Bad Guy'"," 'Billie Eilish'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/bad%20guy.jpg'"," 'https://music4b.000webhostapp.com/Bad%20GUY.mp3')",,,,,,,,6283d7bb2f7b3d333608089c
+(71, 103, 51," 'Havana'"," 'Camila Cabello'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/HAVANA.jpg'"," 'https://music4b.000webhostapp.com/Havana.mp3')",,,,,,,,6283d7bb2f7b3d333608089d
+(73, 106, 8," 'Nơi Này Có Anh (Masew Bootleg)'"," 'Sơn Tùng M-TP'"," 'https://res.cloudinary.com/dzwnv6l4h/image/upload/v1634485372/img/album/N%C6%A1i_N%C3%A0y_C%C3%B3_Anh_Masew_Bootleg_w5skzn.jpg'"," 'https://res.cloudinary.com/dzwnv6l4h/video/upload/v1634485366/mp3/Noi-Nay-Co-Anh-Masew-Bootleg-Son-Tung-M-TP-Masew_lrrkxb.mp3')",,,,,,,,6283d7bb2f7b3d333608089e
+(74, 106, 31," 'Họ Yêu Ai Mất Rồi'"," 'Doãn Hiếu"," D.'"," 'https://res.cloudinary.com/dzwnv6l4h/image/upload/v1634895356/img/baihat/top-10-bai-nhac-tre/hoyeuaimatroi_mzso5b.jpg'"," 'https://res.cloudinary.com/dzwnv6l4h/video/upload/v1634895436/mp3/top-10-bai-nhac-tre/HoYeuAiMatRoi_nr4n06.mp3')",,,,,,,6283d7bb2f7b3d333608089f
+(75, 106, 39," 'nàng thơ ... trời giấu mang em đi'"," 'AMEE"," Hoàng Dũng'"," 'https://res.cloudinary.com/dzwnv6l4h/image/upload/v1635154163/img/baihat/troigiaumangemdi_h4qevm.jpg'"," 'https://res.cloudinary.com/dzwnv6l4h/video/upload/v1634922618/mp3/album-amee/nangtho-troigiaumangemdi_t5rcqy.mp3')",,,,,,,6283d7bb2f7b3d33360808a0
+(76, 106, 65," 'Nước Mắt Em Lau Bằng Tình Yêu Mới'"," 'Da LAB"," Tóc Tiên'"," 'https://res.cloudinary.com/dzwnv6l4h/image/upload/v1634970442/img/baihat/rap/nuocmatemlaubangtinhyeumoi_spv7at.jpg'"," 'https://res.cloudinary.com/dzwnv6l4h/video/upload/v1634969960/mp3/rap-playlist/nuocmatemlaubangtinhyeumoi_wznbhg.mp3')",,,,,,,6283d7bb2f7b3d33360808a1
+(77, 109, 5," 'Remember Me (SlimV 2017 Mix)'"," 'Sơn Tùng M-TP'"," 'https://res.cloudinary.com/dzwnv6l4h/image/upload/v1634478938/img/album/Remember_Me_SlimV_2017_Mix_hessid.jpg'"," 'https://res.cloudinary.com/dzwnv6l4h/video/upload/v1634479018/mp3/Remember-Me-SlimV-2017-Mix-Son-Tung-M-TP-SlimV_tma2em.mp3')",,,,,,,,6283d7bb2f7b3d33360808a2
+(78, 109, 8," 'Nơi Này Có Anh (Masew Bootleg)'"," 'Sơn Tùng M-TP'"," 'https://res.cloudinary.com/dzwnv6l4h/image/upload/v1634485372/img/album/N%C6%A1i_N%C3%A0y_C%C3%B3_Anh_Masew_Bootleg_w5skzn.jpg'"," 'https://res.cloudinary.com/dzwnv6l4h/video/upload/v1634485366/mp3/Noi-Nay-Co-Anh-Masew-Bootleg-Son-Tung-M-TP-Masew_lrrkxb.mp3')",,,,,,,,6283d7bb2f7b3d33360808a3
+(79, 110, 19," 'Trying Not To Cry'"," 'Kina"," Cavetown'"," 'https://res.cloudinary.com/dzwnv6l4h/image/upload/v1634893170/img/baihat/Kina/trying-not-to-cry_izkcc2.jpg'"," 'https://res.cloudinary.com/dzwnv6l4h/video/upload/v1634893146/mp3/Kina/TryingNotToCry_wtqw4t.mp3')",,,,,,,6283d7bb2f7b3d33360808a4
+(80, 110, 24," 'Feel Again'"," 'Kina"," Au/Ra'"," 'https://res.cloudinary.com/dzwnv6l4h/image/upload/v1634893170/img/baihat/Kina/feel-again_veqrhc.jpg'"," 'https://res.cloudinary.com/dzwnv6l4h/video/upload/v1634893139/mp3/Kina/feel-again_is7ep2.mp3')",,,,,,,6283d7bb2f7b3d33360808a5
+(81, 110, 36," 'gr8teful (intro)'"," 'AMEE'"," 'https://res.cloudinary.com/dzwnv6l4h/image/upload/v1634922979/img/baihat/amee/gr8ful_u2ewmk.jpg'"," 'https://res.cloudinary.com/dzwnv6l4h/video/upload/v1634922620/mp3/album-amee/gr8full_tpb4sc.mp3')",,,,,,,,6283d7bb2f7b3d33360808a6
+(82, 87, 84," 'Bad Guy'"," 'Billie Eilish'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/bad%20guy.jpg'"," 'https://music4b.000webhostapp.com/Bad%20GUY.mp3')",,,,,,,,6283d7bb2f7b3d33360808a7
+(83, 87, 51," 'Havana'"," 'Camila Cabello'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/HAVANA.jpg'"," 'https://music4b.000webhostapp.com/Havana.mp3')",,,,,,,,6283d7bb2f7b3d33360808a8
+(84, 87, 143," 'Tình nhạt phai'"," 'Vicky Nhung'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Discover%20Weekly/tinhnhatphai.jpg'"," 'https://music4b.000webhostapp.com/T%C3%ACnh%20nh%E1%BA%A1t%20phai%20Vicky%20Nhung%20cover.mp3')",,,,,,,,6283d7bb2f7b3d33360808a9
+(85, 87, 70," 'Faded'"," 'Alan Walker'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Alan%20Walker.jpg'"," 'https://music4b.000webhostapp.com/Faded.mp3')",,,,,,,,6283d7bb2f7b3d33360808aa
+(86, 87, 144," 'At my worts'"," 'Pink Sweat'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Discover%20Weekly/atmyworts.jpg'"," 'https://music4b.000webhostapp.com/Maddox%20At%20My%20Worst.mp3');",,,,,,,,6283d7bb2f7b3d33360808ab
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808ac
+-- --------------------------------------------------------,,,,,,,,,,,,,,6283d7bb2f7b3d33360808ad
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808ae
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808af
+-- Cấu trúc bảng cho bảng `bangxephang`,,,,,,,,,,,,,,6283d7bb2f7b3d33360808b0
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808b1
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808b2
+CREATE TABLE `bangxephang` (,,,,,,,,,,,,,,6283d7bb2f7b3d33360808b3
+  `IdBangXepHang` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360808b4
+  `TenBangXepHang` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360808b5
+  `HinhBangXepHang` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360808b6
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;,,,,,,,,,,,,,,6283d7bb2f7b3d33360808b7
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808b8
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808b9
+-- Đang đổ dữ liệu cho bảng `bangxephang`,,,,,,,,,,,,,,6283d7bb2f7b3d33360808ba
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808bb
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808bc
+INSERT INTO `bangxephang` (`IdBangXepHang`, `TenBangXepHang`, `HinhBangXepHang`) VALUES,,,,,,,,,,,,6283d7bb2f7b3d33360808bd
+(1," 'Top 50 Global'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Top%2050%20Global.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808be
+(2," 'Top 50 USA'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Top%2050%20USA.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808bf
+(3," 'Top 50 Việt Nam'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Top%2050%20Vi%E1%BB%87t%20Nam.jpg');",,,,,,,,,,,,6283d7bb2f7b3d33360808c0
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808c1
+-- --------------------------------------------------------,,,,,,,,,,,,,,6283d7bb2f7b3d33360808c2
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808c3
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808c4
+-- Cấu trúc bảng cho bảng `chude`,,,,,,,,,,,,,,6283d7bb2f7b3d33360808c5
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808c6
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808c7
+CREATE TABLE `chude` (,,,,,,,,,,,,,,6283d7bb2f7b3d33360808c8
+  `IdChuDe` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360808c9
+  `TenChuDe` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360808ca
+  `HinhChuDe` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360808cb
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;,,,,,,,,,,,,,,6283d7bb2f7b3d33360808cc
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808cd
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808ce
+-- Đang đổ dữ liệu cho bảng `chude`,,,,,,,,,,,,,,6283d7bb2f7b3d33360808cf
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808d0
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808d1
+INSERT INTO `chude` (`IdChuDe`, `TenChuDe`, `HinhChuDe`) VALUES,,,,,,,,,,,,6283d7bb2f7b3d33360808d2
+(1," 'Acoustic'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Acoustic.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808d3
+(2," 'Hip Hop'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Hip%20Hop.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808d4
+(3," 'Kpop'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Kpop.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808d5
+(4," 'Pop'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Pop.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808d6
+(5," 'Rock'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Rock.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808d7
+(6," 'Discover Weekly'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Discover%20Weekly.jpg');",,,,,,,,,,,,6283d7bb2f7b3d33360808d8
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808d9
+-- --------------------------------------------------------,,,,,,,,,,,,,,6283d7bb2f7b3d33360808da
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808db
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808dc
+-- Cấu trúc bảng cho bảng `dexuat`,,,,,,,,,,,,,,6283d7bb2f7b3d33360808dd
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808de
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808df
+CREATE TABLE `dexuat` (,,,,,,,,,,,,,,6283d7bb2f7b3d33360808e0
+  `IdDeXuat` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360808e1
+  `TenDeXuat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360808e2
+  `HinhDeXuat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360808e3
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;,,,,,,,,,,,,,,6283d7bb2f7b3d33360808e4
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808e5
+-- --------------------------------------------------------,,,,,,,,,,,,,,6283d7bb2f7b3d33360808e6
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808e7
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808e8
+-- Cấu trúc bảng cho bảng `nghesi`,,,,,,,,,,,,,,6283d7bb2f7b3d33360808e9
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808ea
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808eb
+CREATE TABLE `nghesi` (,,,,,,,,,,,,,,6283d7bb2f7b3d33360808ec
+  `IdNgheSi` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360808ed
+  `TenNgheSi` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360808ee
+  `HinhNgheSi` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d33360808ef
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;,,,,,,,,,,,,,,6283d7bb2f7b3d33360808f0
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808f1
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808f2
+-- Đang đổ dữ liệu cho bảng `nghesi`,,,,,,,,,,,,,,6283d7bb2f7b3d33360808f3
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360808f4
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808f5
+INSERT INTO `nghesi` (`IdNgheSi`, `TenNgheSi`, `HinhNgheSi`) VALUES,,,,,,,,,,,,6283d7bb2f7b3d33360808f6
+(1," 'Bích Phương'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/B%C3%ADch%20Ph%C6%B0%C6%A1ng.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808f7
+(2," 'Binz'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/Binz.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808f8
+(3," 'Đen Vâu'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90en%20V%C3%A2u.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808f9
+(4," 'Đức Phúc'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/%C4%90%E1%BB%A9c%20Ph%C3%BAc.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808fa
+(5," 'Lê Bảo Bình'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/L%C3%AA%20B%E1%BA%A3o%20B%C3%ACnh.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808fb
+(6," 'Noo Phước Thịnh'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/Noo%20Ph%C6%B0%E1%BB%9Bc%20Th%E1%BB%8Bnh.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808fc
+(7," 'Sơn Tùng MTP'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/S%C6%A1n%20T%C3%B9ng.jpg')",,,,,,,,,,,,6283d7bb2f7b3d33360808fd
+(8," 'Mr.Siro'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Day%20D%E1%BB%A9t%20N%E1%BB%97i%20%C4%90au.jpg\r\n');",,,,,,,,,,,,6283d7bb2f7b3d33360808fe
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360808ff
+-- --------------------------------------------------------,,,,,,,,,,,,,,6283d7bb2f7b3d3336080900
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080901
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080902
+-- Cấu trúc bảng cho bảng `nguoidung`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080903
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080904
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080905
+CREATE TABLE `nguoidung` (,,,,,,,,,,,,,,6283d7bb2f7b3d3336080906
+  `UserName` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080907
+  `Password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080908
+  `Name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080909
+  `Email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608090a
+  `Image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608090b
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;,,,,,,,,,,,,,,6283d7bb2f7b3d333608090c
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608090d
+--,,,,,,,,,,,,,,6283d7bb2f7b3d333608090e
+-- Đang đổ dữ liệu cho bảng `nguoidung`,,,,,,,,,,,,,,6283d7bb2f7b3d333608090f
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080910
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080911
+INSERT INTO `nguoidung` (`UserName`, `Password`, `Name`, `Email`, `Image`) VALUES,,,,,,,,,,6283d7bb2f7b3d3336080912
+"('1546572129014213'"," 'LhKbEpmsWkl56J00r34vcnmTg'"," 'Ba Trần'"," '-'"," 'https://graph.facebook.com/1546572129014213/picture?style=large')",,,,,,,,,,6283d7bb2f7b3d3336080913
+"('ba3bon'"," 'abc123456'"," 'ba 99'"," 'ba3bon@gmail.com'"," 'https://music4b.000webhostapp.com/HinhAnh/spotify_64px.png')",,,,,,,,,,6283d7bb2f7b3d3336080914
+"('baocao'"," 'abc123456789'"," 'baocao'"," 'tvba080299@gmail.com'"," 'https://music4b.000webhostapp.com/HinhAnh/spotify_64px.png')",,,,,,,,,,6283d7bb2f7b3d3336080915
+"('duyhan123'"," 'hanhan123'"," 'duyhan123'"," 'doduyhan110@gmail.com'"," 'https://music4b.000webhostapp.com/HinhAnh/spotify_64px.png')",,,,,,,,,,6283d7bb2f7b3d3336080916
+"('hauhau'"," 'hauhau'"," 'hauhau'"," 'lethanhhauh7@gmail.com'"," 'https://music4b.000webhostapp.com/HinhAnh/spotify_64px.png')",,,,,,,,,,6283d7bb2f7b3d3336080917
+"('long@312'"," 'long@312'"," 'long@312'"," 'kkkk@gmail.com'"," 'https://music4b.000webhostapp.com/HinhAnh/spotify_64px.png')",,,,,,,,,,6283d7bb2f7b3d3336080918
+"('phat123456'"," 'Tranphat@123'"," 'phat123456'"," 'dadadgggg@gmail.com'"," 'https://music4b.000webhostapp.com/HinhAnh/spotify_64px.png')",,,,,,,,,,6283d7bb2f7b3d3336080919
+"('tranlong23'"," 'tranlong23@'"," 'tranlong23'"," 'tranvanlong230900@gmail.com'"," 'https://music4b.000webhostapp.com/HinhAnh/spotify_64px.png')",,,,,,,,,,6283d7bb2f7b3d333608091a
+"('trantanphat'"," 'trantanphat'"," 'trantanphat'"," 'trantanphat1392000vn@gmail.com'"," 'https://music4b.000webhostapp.com/HinhAnh/spotify_64px.png')",,,,,,,,,,6283d7bb2f7b3d333608091b
+"('tranvanlong'"," 'longpro26@'"," 'tranvanlong'"," 'long.tvl247@gmail.com'"," 'https://music4b.000webhostapp.com/HinhAnh/spotify_64px.png');",,,,,,,,,,6283d7bb2f7b3d333608091c
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608091d
+-- --------------------------------------------------------,,,,,,,,,,,,,,6283d7bb2f7b3d333608091e
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608091f
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080920
+-- Cấu trúc bảng cho bảng `nguoidungyeuthich`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080921
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080922
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080923
+CREATE TABLE `nguoidungyeuthich` (,,,,,,,,,,,,,,6283d7bb2f7b3d3336080924
+  `IdYeuThich` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080925
+  `UserName` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080926
+  `IdBaiHat` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080927
+  `TenBaiHat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080928
+  `TenCaSi` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080929
+  `HinhBaiHat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608092a
+  `LinkBaiHat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608092b
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;,,,,,,,,,,,,,,6283d7bb2f7b3d333608092c
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608092d
+--,,,,,,,,,,,,,,6283d7bb2f7b3d333608092e
+-- Đang đổ dữ liệu cho bảng `nguoidungyeuthich`,,,,,,,,,,,,,,6283d7bb2f7b3d333608092f
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080930
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080931
+INSERT INTO `nguoidungyeuthich` (`IdYeuThich`, `UserName`, `IdBaiHat`, `TenBaiHat`, `TenCaSi`, `HinhBaiHat`, `LinkBaiHat`) VALUES,,,,,,,,6283d7bb2f7b3d3336080932
+(29," '1546572129014213'", 52," 'Senorita'"," 'Camila Cabello'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Senorita.jpg'"," 'https://music4b.000webhostapp.com/Senrorita.mp3')",,,,,,,,6283d7bb2f7b3d3336080933
+(30," '1546572129014213'", 138," 'Nói với em ^.^'"," 'BigDady'"," 'https://music4b.000webhostapp.com/240494798_1555347028136723_7687810014802095116_n.jpg'"," 'https://music4b.000webhostapp.com/N%C3%B3i%20V%E1%BB%9Bi%20Em%20%20BigDaddy.mp3')",,,,,,,,6283d7bb2f7b3d3336080934
+(31," '1546572129014213'", 66," 'Love Yourself'"," 'Justin Bieber'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Justin%20Bieber.jpg'"," 'https://music4b.000webhostapp.com/Love%20Yourself.mp3')",,,,,,,,6283d7bb2f7b3d3336080935
+(32," '1546572129014213'", 70," 'Faded'"," 'Alan Walker'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/Alan%20Walker.jpg'"," 'https://music4b.000webhostapp.com/Faded.mp3')",,,,,,,,6283d7bb2f7b3d3336080936
+(48," 'ba3bon'", 144," 'At my worts'"," 'Pink Sweat'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Discover%20Weekly/atmyworts.jpg'"," 'https://music4b.000webhostapp.com/Maddox%20At%20My%20Worst.mp3')",,,,,,,,6283d7bb2f7b3d3336080937
+(49," 'ba3bon'", 51," 'Havana'"," 'Camila Cabello'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/HAVANA.jpg'"," 'https://music4b.000webhostapp.com/Havana.mp3');",,,,,,,,6283d7bb2f7b3d3336080938
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080939
+-- --------------------------------------------------------,,,,,,,,,,,,,,6283d7bb2f7b3d333608093a
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608093b
+--,,,,,,,,,,,,,,6283d7bb2f7b3d333608093c
+-- Cấu trúc bảng cho bảng `phobien`,,,,,,,,,,,,,,6283d7bb2f7b3d333608093d
+--,,,,,,,,,,,,,,6283d7bb2f7b3d333608093e
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608093f
+CREATE TABLE `phobien` (,,,,,,,,,,,,,,6283d7bb2f7b3d3336080940
+  `IdPhoBien` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080941
+  `TenPhoBien` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080942
+  `HinhPhoBien` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080943
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;,,,,,,,,,,,,,,6283d7bb2f7b3d3336080944
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080945
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080946
+-- Đang đổ dữ liệu cho bảng `phobien`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080947
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080948
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080949
+INSERT INTO `phobien` (`IdPhoBien`, `TenPhoBien`, `HinhPhoBien`) VALUES,,,,,,,,,,,,6283d7bb2f7b3d333608094a
+(1," 'Black Pink'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg')",,,,,,,,,,,,6283d7bb2f7b3d333608094b
+(2," 'BTS'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/BTS.jpg')",,,,,,,,,,,,6283d7bb2f7b3d333608094c
+(3," 'Camila Cabello'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Camila%20Cabello.jpg')",,,,,,,,,,,,6283d7bb2f7b3d333608094d
+(4," 'Charlie Puth'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Charlie%20Puth.jpg')",,,,,,,,,,,,6283d7bb2f7b3d333608094e
+(5," 'Justin Bieber'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Justin%20Bieber.jpg')",,,,,,,,,,,,6283d7bb2f7b3d333608094f
+(6," 'Maroon 5'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Maroon%205.jpg')",,,,,,,,,,,,6283d7bb2f7b3d3336080950
+(7," 'Snoop Dogg'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Snoop%20Dogg.jpg');",,,,,,,,,,,,6283d7bb2f7b3d3336080951
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080952
+-- --------------------------------------------------------,,,,,,,,,,,,,,6283d7bb2f7b3d3336080953
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080954
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080955
+-- Cấu trúc bảng cho bảng `playlist`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080956
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080957
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080958
+CREATE TABLE `playlist` (,,,,,,,,,,,,,,6283d7bb2f7b3d3336080959
+  `IdPlayList` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608095a
+  `TenPlayList` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608095b
+  `HinhNen` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608095c
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;,,,,,,,,,,,,,,6283d7bb2f7b3d333608095d
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608095e
+--,,,,,,,,,,,,,,6283d7bb2f7b3d333608095f
+-- Đang đổ dữ liệu cho bảng `playlist`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080960
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080961
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080962
+INSERT INTO `playlist` (`IdPlayList`, `TenPlayList`, `HinhNen`) VALUES,,,,,,,,,,,,6283d7bb2f7b3d3336080963
+(4," 'Lê Bảo Bình Radio'"," 'https://music4b.000webhostapp.com/HinhAnh/Playlist/L%C3%AA%20B%E1%BA%A3o%20B%C3%ACnh%20Radio.jpg')",,,,,,,,,,,,6283d7bb2f7b3d3336080964
+(5," 'Masew Radio'"," 'https://music4b.000webhostapp.com/HinhAnh/Playlist/Masew%20Radio.jpg')",,,,,,,,,,,,6283d7bb2f7b3d3336080965
+(6," 'Sơn Tùng MTP Radio'"," 'https://music4b.000webhostapp.com/HinhAnh/Playlist/S%C6%A1n%20T%C3%B9ng%20M-TP%20Radio.jpg')",,,,,,,,,,,,6283d7bb2f7b3d3336080966
+(7," 'Noo Phước Thịnh Radio'"," 'https://music4b.000webhostapp.com/HinhAnh/Playlist/Th%C6%B0%C6%A1ng%20Em%20L%C3%A0%20%C4%90i%E1%BB%81u%20Anh%20Kh%C3%B4ng%20Th%E1%BB%83%20Radio.jpg')",,,,,,,,,,,,6283d7bb2f7b3d3336080967
+(8," 'BinZ Radio'"," 'https://music4b.000webhostapp.com/HinhAnh/Playlist/Untitled-1.jpg')",,,,,,,,,,,,6283d7bb2f7b3d3336080968
+(9," 'Trịnh Thăng Bình Radio'"," 'https://music4b.000webhostapp.com/HinhAnh/Playlist/Tr%E1%BB%8Bnh%20Th%C4%83ng%20B%C3%ACnh%20Radio.jpg')",,,,,,,,,,,,6283d7bb2f7b3d3336080969
+(10," 'ERIK Radio'"," 'https://music4b.000webhostapp.com/HinhAnh/Playlist/Your.jpg');",,,,,,,,,,,,6283d7bb2f7b3d333608096a
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608096b
+-- --------------------------------------------------------,,,,,,,,,,,,,,6283d7bb2f7b3d333608096c
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608096d
+--,,,,,,,,,,,,,,6283d7bb2f7b3d333608096e
+-- Cấu trúc bảng cho bảng `thinhhanh`,,,,,,,,,,,,,,6283d7bb2f7b3d333608096f
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080970
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080971
+CREATE TABLE `thinhhanh` (,,,,,,,,,,,,,,6283d7bb2f7b3d3336080972
+  `IdThinhHanh` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080973
+  `TenThinhHanh` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080974
+  `HinhThinhHanh` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d3336080975
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;,,,,,,,,,,,,,,6283d7bb2f7b3d3336080976
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080977
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080978
+-- Đang đổ dữ liệu cho bảng `thinhhanh`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080979
+--,,,,,,,,,,,,,,6283d7bb2f7b3d333608097a
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608097b
+INSERT INTO `thinhhanh` (`IdThinhHanh`, `TenThinhHanh`, `HinhThinhHanh`) VALUES,,,,,,,,,,,,6283d7bb2f7b3d333608097c
+(1," 'Đón Tết'"," 'https://music4b.000webhostapp.com/HinhAnh/ThinhHanh/%C4%90%C3%B3n%20T%E1%BA%BFt.jpg')",,,,,,,,,,,,6283d7bb2f7b3d333608097d
+(2," 'Fresh Finds'"," 'https://music4b.000webhostapp.com/HinhAnh/ThinhHanh/Fresh%20Finds.jpg')",,,,,,,,,,,,6283d7bb2f7b3d333608097e
+(3," 'New Music Friday'"," 'https://music4b.000webhostapp.com/HinhAnh/ThinhHanh/New%20Music%20Friday.jpg')",,,,,,,,,,,,6283d7bb2f7b3d333608097f
+(4," 'Thiên Hạ Nghe Gì'"," 'https://music4b.000webhostapp.com/HinhAnh/ThinhHanh/Thi%C3%AAn%20H%E1%BA%A1%20Nghe%20G%C3%AC.jpg')",,,,,,,,,,,,6283d7bb2f7b3d3336080980
+(5," 'Throwback Thursday'"," 'https://music4b.000webhostapp.com/HinhAnh/ThinhHanh/Throwback%20Thursday.jpg');",,,,,,,,,,,,6283d7bb2f7b3d3336080981
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080982
+-- --------------------------------------------------------,,,,,,,,,,,,,,6283d7bb2f7b3d3336080983
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080984
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080985
+-- Cấu trúc bảng cho bảng `thuvienplaylist`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080986
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080987
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080988
+CREATE TABLE `thuvienplaylist` (,,,,,,,,,,,,,,6283d7bb2f7b3d3336080989
+  `IDThuVienPlayList` int(11) NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608098a
+  `TenThuVienPlayList` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608098b
+  `HinhThuVienPlayList` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608098c
+  `UserName` varchar(255) COLLATE utf8_unicode_ci NOT NULL,,,,,,,,,,,,,,6283d7bb2f7b3d333608098d
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;,,,,,,,,,,,,,,6283d7bb2f7b3d333608098e
+,,,,,,,,,,,,,,6283d7bb2f7b3d333608098f
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080990
+-- Đang đổ dữ liệu cho bảng `thuvienplaylist`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080991
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080992
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080993
+INSERT INTO `thuvienplaylist` (`IDThuVienPlayList`, `TenThuVienPlayList`, `HinhThuVienPlayList`, `UserName`) VALUES,,,,,,,,,,,6283d7bb2f7b3d3336080994
+(3," 'Nhac hay ho ne !!'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/bad%20guy.jpg'"," 'ba3bon')",,,,,,,,,,,6283d7bb2f7b3d3336080995
+(22," 'facebok'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/bad%20guy.jpg'"," '1546572129014213')",,,,,,,,,,,6283d7bb2f7b3d3336080996
+(72," 'chill chill <3'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/bad%20guy.jpg'"," 'ba3bon')",,,,,,,,,,,6283d7bb2f7b3d3336080997
+(73," 'new folder'"," 'https://music4b.000webhostapp.com/HinhAnh/PhoBien/Black%20Pink.jpg'"," 'ba3bon')",,,,,,,,,,,6283d7bb2f7b3d3336080998
+(82," 'chill chill t7 <3'"," 'https://music4b.000webhostapp.com/icon_thuvien.jpg'"," '1546572129014213')",,,,,,,,,,,6283d7bb2f7b3d3336080999
+(85," 'test'"," 'https://music4b.000webhostapp.com/HinhAnh/NgheSi/B%C3%ADch%20Ph%C6%B0%C6%A1ng/G%E1%BB%ADi%20Anh%20Xa%20Nh%E1%BB%9B.jpg'"," '1546572129014213')",,,,,,,,,,,6283d7bb2f7b3d333608099a
+(87," 'c'"," 'https://music4b.000webhostapp.com/HinhAnh/ChuDe/Discover%20Weekly/atmyworts.jpg'"," 'ba3bon')",,,,,,,,,,,6283d7bb2f7b3d333608099b
+(90," 'zui zui !!'"," 'https://music4b.000webhostapp.com/icon_thuvien.jpg'"," '1546572129014213')",,,,,,,,,,,6283d7bb2f7b3d333608099c
+(91," 'báo cáo'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/VietNam/Y%C3%AAu%205.jpg'"," '1546572129014213')",,,,,,,,,,,6283d7bb2f7b3d333608099d
+(103," 'New Folder'"," 'https://music4b.000webhostapp.com/HinhAnh/BangXepHang/Global/HAVANA.jpg'"," 'baocao')",,,,,,,,,,,6283d7bb2f7b3d333608099e
+(104," 'gftu'"," 'https://music4b.000webhostapp.com/icon_thuvien.jpg'"," 'phat123456')",,,,,,,,,,,6283d7bb2f7b3d333608099f
+(106," 'nhac hay'"," 'https://res.cloudinary.com/dzwnv6l4h/image/upload/v1634970442/img/baihat/rap/nuocmatemlaubangtinhyeumoi_spv7at.jpg'"," 'tranvanlong')",,,,,,,,,,,6283d7bb2f7b3d33360809a0
+(107," 'nhạc víp'"," 'https://music4b.000webhostapp.com/icon_thuvien.jpg'"," 'tranvanlong')",,,,,,,,,,,6283d7bb2f7b3d33360809a1
+(108," 'music'"," 'https://music4b.000webhostapp.com/icon_thuvien.jpg'"," 'tranvanlong')",,,,,,,,,,,6283d7bb2f7b3d33360809a2
+(109," 'Playlist'"," 'https://res.cloudinary.com/dzwnv6l4h/image/upload/v1634485372/img/album/N%C6%A1i_N%C3%A0y_C%C3%B3_Anh_Masew_Bootleg_w5skzn.jpg'"," 'trantanphat')",,,,,,,,,,,6283d7bb2f7b3d33360809a3
+(110," 'ban nhac toi yeu'"," 'https://res.cloudinary.com/dzwnv6l4h/image/upload/v1634922979/img/baihat/amee/gr8ful_u2ewmk.jpg'"," 'hauhau');",,,,,,,,,,,6283d7bb2f7b3d33360809a4
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809a5
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809a6
+-- Chỉ mục cho các bảng đã đổ,,,,,,,,,,,,,,6283d7bb2f7b3d33360809a7
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809a8
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809a9
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809aa
+-- Chỉ mục cho bảng `baihat`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ab
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ac
+ALTER TABLE `baihat`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ad
+  ADD PRIMARY KEY (`IdBaiHat`);,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ae
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809af
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809b0
+-- Chỉ mục cho bảng `baihatthuvienplaylist`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809b1
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809b2
+ALTER TABLE `baihatthuvienplaylist`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809b3
+  ADD PRIMARY KEY (`IdBaiHatThuVienPlayList`);,,,,,,,,,,,,,,6283d7bb2f7b3d33360809b4
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809b5
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809b6
+-- Chỉ mục cho bảng `bangxephang`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809b7
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809b8
+ALTER TABLE `bangxephang`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809b9
+  ADD PRIMARY KEY (`IdBangXepHang`);,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ba
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809bb
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809bc
+-- Chỉ mục cho bảng `chude`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809bd
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809be
+ALTER TABLE `chude`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809bf
+  ADD PRIMARY KEY (`IdChuDe`);,,,,,,,,,,,,,,6283d7bb2f7b3d33360809c0
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809c1
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809c2
+-- Chỉ mục cho bảng `dexuat`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809c3
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809c4
+ALTER TABLE `dexuat`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809c5
+  ADD PRIMARY KEY (`IdDeXuat`);,,,,,,,,,,,,,,6283d7bb2f7b3d33360809c6
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809c7
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809c8
+-- Chỉ mục cho bảng `nghesi`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809c9
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ca
+ALTER TABLE `nghesi`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809cb
+  ADD PRIMARY KEY (`IdNgheSi`);,,,,,,,,,,,,,,6283d7bb2f7b3d33360809cc
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809cd
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ce
+-- Chỉ mục cho bảng `nguoidung`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809cf
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809d0
+ALTER TABLE `nguoidung`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809d1
+  ADD PRIMARY KEY (`UserName`);,,,,,,,,,,,,,,6283d7bb2f7b3d33360809d2
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809d3
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809d4
+-- Chỉ mục cho bảng `nguoidungyeuthich`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809d5
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809d6
+ALTER TABLE `nguoidungyeuthich`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809d7
+  ADD PRIMARY KEY (`IdYeuThich`);,,,,,,,,,,,,,,6283d7bb2f7b3d33360809d8
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809d9
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809da
+-- Chỉ mục cho bảng `phobien`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809db
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809dc
+ALTER TABLE `phobien`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809dd
+  ADD PRIMARY KEY (`IdPhoBien`);,,,,,,,,,,,,,,6283d7bb2f7b3d33360809de
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809df
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809e0
+-- Chỉ mục cho bảng `playlist`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809e1
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809e2
+ALTER TABLE `playlist`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809e3
+  ADD PRIMARY KEY (`IdPlayList`);,,,,,,,,,,,,,,6283d7bb2f7b3d33360809e4
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809e5
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809e6
+-- Chỉ mục cho bảng `thinhhanh`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809e7
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809e8
+ALTER TABLE `thinhhanh`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809e9
+  ADD PRIMARY KEY (`IdThinhHanh`);,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ea
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809eb
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ec
+-- Chỉ mục cho bảng `thuvienplaylist`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ed
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ee
+ALTER TABLE `thuvienplaylist`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ef
+  ADD PRIMARY KEY (`IDThuVienPlayList`);,,,,,,,,,,,,,,6283d7bb2f7b3d33360809f0
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809f1
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809f2
+-- AUTO_INCREMENT cho các bảng đã đổ,,,,,,,,,,,,,,6283d7bb2f7b3d33360809f3
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809f4
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809f5
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809f6
+-- AUTO_INCREMENT cho bảng `baihat`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809f7
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809f8
+ALTER TABLE `baihat`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809f9
+  MODIFY `IdBaiHat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=145;,,,,,,,,,,,,,6283d7bb2f7b3d33360809fa
+,,,,,,,,,,,,,,6283d7bb2f7b3d33360809fb
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809fc
+-- AUTO_INCREMENT cho bảng `baihatthuvienplaylist`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809fd
+--,,,,,,,,,,,,,,6283d7bb2f7b3d33360809fe
+ALTER TABLE `baihatthuvienplaylist`,,,,,,,,,,,,,,6283d7bb2f7b3d33360809ff
+  MODIFY `IdBaiHatThuVienPlayList` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;,,,,,,,,,,,,,6283d7bb2f7b3d3336080a00
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a01
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a02
+-- AUTO_INCREMENT cho bảng `bangxephang`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a03
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a04
+ALTER TABLE `bangxephang`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a05
+  MODIFY `IdBangXepHang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;,,,,,,,,,,,,,6283d7bb2f7b3d3336080a06
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a07
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a08
+-- AUTO_INCREMENT cho bảng `chude`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a09
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a0a
+ALTER TABLE `chude`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a0b
+  MODIFY `IdChuDe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;,,,,,,,,,,,,,6283d7bb2f7b3d3336080a0c
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a0d
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a0e
+-- AUTO_INCREMENT cho bảng `dexuat`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a0f
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a10
+ALTER TABLE `dexuat`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a11
+  MODIFY `IdDeXuat` int(11) NOT NULL AUTO_INCREMENT;,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a12
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a13
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a14
+-- AUTO_INCREMENT cho bảng `nghesi`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a15
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a16
+ALTER TABLE `nghesi`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a17
+  MODIFY `IdNgheSi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;,,,,,,,,,,,,,6283d7bb2f7b3d3336080a18
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a19
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a1a
+-- AUTO_INCREMENT cho bảng `nguoidungyeuthich`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a1b
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a1c
+ALTER TABLE `nguoidungyeuthich`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a1d
+  MODIFY `IdYeuThich` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;,,,,,,,,,,,,,6283d7bb2f7b3d3336080a1e
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a1f
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a20
+-- AUTO_INCREMENT cho bảng `phobien`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a21
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a22
+ALTER TABLE `phobien`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a23
+  MODIFY `IdPhoBien` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;,,,,,,,,,,,,,6283d7bb2f7b3d3336080a24
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a25
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a26
+-- AUTO_INCREMENT cho bảng `playlist`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a27
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a28
+ALTER TABLE `playlist`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a29
+  MODIFY `IdPlayList` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;,,,,,,,,,,,,,6283d7bb2f7b3d3336080a2a
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a2b
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a2c
+-- AUTO_INCREMENT cho bảng `thinhhanh`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a2d
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a2e
+ALTER TABLE `thinhhanh`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a2f
+  MODIFY `IdThinhHanh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;,,,,,,,,,,,,,6283d7bb2f7b3d3336080a30
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a31
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a32
+-- AUTO_INCREMENT cho bảng `thuvienplaylist`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a33
+--,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a34
+ALTER TABLE `thuvienplaylist`,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a35
+  MODIFY `IDThuVienPlayList` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;,,,,,,,,,,,,,6283d7bb2f7b3d3336080a36
+COMMIT;,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a37
+,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a38
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a39
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a3a
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;,,,,,,,,,,,,,,6283d7bb2f7b3d3336080a3b
